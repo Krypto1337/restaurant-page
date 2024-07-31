@@ -1,5 +1,6 @@
 const home = () => {
 	const content = document.getElementById("content");
+	content.innerHTML = "";
 
 	function createTitle() {
 		const title = document.createElement("div");

@@ -27,7 +27,7 @@ nav {
 #home:hover,
 #menu:hover,
 #about:hover {
-	background-color: #38414a;
+	background-color: #6e5dc6;
 }
 
 /** Home **/
@@ -80,4 +80,8 @@ nav {
 
 .days {
 	white-space: pre;
+}
+
+.selected {
+	background-color: #5e4db2;
 }
