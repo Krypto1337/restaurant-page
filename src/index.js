@@ -31,4 +31,4 @@ const DOMElements = (function () {
 	});
 })();
 
-DOMElements();
+DOMElements;
