@@ -11,6 +11,7 @@ const menu = () => {
 
 	function createMenu() {
 		const menuDiv = document.createElement("div");
+		menuDiv.classList.add("menu-container");
 		content.append(menuDiv);
 		menuDiv.appendChild(createDrinks());
 		menuDiv.appendChild(createMainDishes());
@@ -48,6 +49,7 @@ const menu = () => {
 			const _drink = document.createElement("p");
 			const _drinkTitle = document.createElement("h3");
 			const _drinkPrice = document.createElement("p");
+			_drinkCard.classList.add("drink-card");
 			_drinkTitle.classList.add("drink-title");
 			_drinkTitle.innerHTML = element.drink;
 			_drink.textContent = element.content;
@@ -64,24 +66,25 @@ const menu = () => {
 
 	function createMainDishes() {
 		const dishContainer = document.createElement("div");
+		dishContainer.classList.add("dish-container");
 		const dishes = [
 			{
 				dish: "Sushi",
 				content:
 					"Sushi consists of vinegared rice accompanied by various ingredients such as raw fish, seafood, vegetables, or eggs. Common types include Nigiri (slices of fish on rice), Maki (rolls), and Sashimi (slices of raw fish without rice).",
-				price: "¥ 5000",
+				price: "¥ 5.000",
 			},
 			{
 				dish: "Ramen",
 				content:
 					"Ramen is a Japanese noodle soup typically made with wheat noodles served in a meat or fish-based broth, often flavored with soy sauce or miso. It is topped with ingredients like sliced pork, nori (seaweed), menma (bamboo shoots), and green onions.",
-				price: "¥ 1000",
+				price: "¥ 1.000",
 			},
 			{
 				dish: "Tempura",
 				content:
 					"Tempura consists of seafood or vegetables that are coated in a light batter and deep-fried to achieve a crispy texture. It is commonly served with a dipping sauce made from soy sauce, mirin, and dashi.",
-				price: "¥ 1200",
+				price: "¥ 1.200",
 			},
 			{
 				dish: "Takoyaki",
@@ -94,6 +97,12 @@ const menu = () => {
 				content:
 					"Okonomiyaki is a savory Japanese pancake made with a batter of flour, egg, and water, mixed with shredded cabbage and various fillings like meat, seafood, or cheese. It is often topped with a special sauce, mayonnaise, and bonito flakes.",
 				price: "¥ 850",
+			},
+			{
+				dish: "Katsu",
+				content:
+					"Katsu is a Japanese dish consisting of a breaded and deep-fried cutlet, typically made with pork (tonkatsu) or chicken (chicken katsu). The cutlet is coated in panko breadcrumbs before frying, resulting in a crispy exterior. It is often served with shredded cabbage, rice, and a thick, sweet-savory sauce called tonkatsu sauce.",
+				price: "¥ 1.250",
 			},
 		];
 

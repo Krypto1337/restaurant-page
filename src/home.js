@@ -32,7 +32,7 @@ const home = () => {
 		const hoursContainer = document.createElement("div");
 		const hoursTitle = document.createElement("h1");
 		hoursTitle.textContent = "Opening hours";
-		hoursContainer.classList.add("hoursContainer");
+		hoursContainer.classList.add("hours-container");
 		hoursContainer.appendChild(hoursTitle);
 		const days = [
 			"Monday",
