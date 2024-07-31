@@ -29,6 +29,11 @@ const DOMElements = (function () {
 		homeDiv.classList.remove("selected");
 		about();
 	});
+
+	document.addEventListener("DOMContentLoaded", () => {
+		home();
+		homeDiv.classList.add("selected");
+	});
 })();
 
 DOMElements;
